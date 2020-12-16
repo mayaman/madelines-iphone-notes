@@ -1,0 +1,88 @@
+body {
+  background: white;
+  background-image: url("https://media.giphy.com/media/u01ioCe6G8URG/giphy.gif");
+  /* background-image: url("https://media.giphy.com/media/26tP5gFcnggL8qoAo/giphy.gif"); */
+  /* background-image: url("https://media.giphy.com/media/uB8NNNcfQTaZKU2xBD/giphy.gif"); */
+
+  background-repeat: repeat-x;
+  background-size: auto 100vh;
+  overflow: scroll;
+  position: relative;
+  width: 15075px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title {
+  font-size: 24px;
+  text-shadow: 1px 1px 5px black;
+  font-weight: bold;
+  font-style: italic;
+  color: whitesmoke;
+  display: inline-block;
+}
+
+.note-container {
+  width: 550px;
+  position: absolute;
+}
+
+.note-details {
+  font-size: 48px;
+  text-shadow: 1px 1px 5px black;
+  opacity: 1;
+  transition: opacity 0.5s;
+  font-weight: bold;
+  font-style: italic;
+  color: whitesmoke;
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.note-details:hover {
+  opacity: 0;
+  cursor: help;
+}
+
+.note-details:hover ~ img {
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px) drop-shadow(0 0 10px white);
+  cursor: help;
+}
+
+.note-details-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.note-container img {
+  width: 100%;
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px) drop-shadow(0 0 10px white);
+  transition: filter 0.5s;
+}
+
+.note-container img:hover {
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px) drop-shadow(0 0 0.9rem white);
+  cursor: help;
+}
+
+.note-container img:hover ~ div {
+  opacity: 0;
+  background: blue;
+}
+
+.note-container time {
+  font-style: italic;
+}
