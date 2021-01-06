@@ -1,15 +1,9 @@
 body {
   position: relative;
   background: white;
-  /* background-image: url("https://media.giphy.com/media/u01ioCe6G8URG/giphy.gif"); */
-  /* background-image: url("https://media.giphy.com/media/26tP5gFcnggL8qoAo/giphy.gif"); */
-  /* background-image: url("https://media.giphy.com/media/uB8NNNcfQTaZKU2xBD/giphy.gif"); */
-
-  background-repeat: repeat-x;
-  background-size: auto 100vh;
   overflow: scroll;
   position: relative;
-  width: 15075px;
+  width: 19075px;
   height: 100vh;
   margin: 0px;
   padding: 0px;
@@ -20,17 +14,16 @@ body {
   min-height: 100vh;
 
   position: fixed;
-  left: 50%; /* % of surrounding element */
+  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); /* % of current element */
+  transform: translate(-50%, -50%);
 }
 
 .title {
   position: fixed;
   font-size: 24px;
   text-shadow: 1px 1px 5px black;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: normal;
   color: whitesmoke;
   display: inline-block;
   margin: auto;
@@ -47,8 +40,6 @@ body {
   text-shadow: 1px 1px 5px black;
   opacity: 1;
   transition: opacity 0.5s;
-  font-weight: bold;
-  font-style: italic;
   color: whitesmoke;
   display: inline-block;
   position: absolute;
@@ -65,38 +56,46 @@ body {
   cursor: help;
 }
 
-.note-details:hover ~ img {
-  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
-  filter: blur(0px) drop-shadow(0 0 10px white);
-  cursor: help;
-}
-
 .note-details-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  min-width: 80%;
 }
 
-.note-container img {
-  width: 100%;
+.note-contents {
+  max-width: 100%;
+  color: #434343;
+  /* background: white; */
+
+  padding: 3px;
+  font-family: "Courier New", monospace;
+
   -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
   filter: blur(3px) drop-shadow(0 0 10px white);
   transition: filter 0.5s;
+  display: inline-block;
 }
 
-.note-container img:hover {
+.note-details:hover ~ .note-contents {
   -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
-  filter: blur(0px) drop-shadow(0 0 0.9rem white);
+  filter: blur(0px) drop-shadow(0 0 10px white);
   cursor: help;
 }
 
-.note-container img:hover ~ div {
-  opacity: 0;
-  background: blue;
+.note-contents:hover {
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px) drop-shadow(0 0 0.9rem white);
+  opacity: 1;
+  cursor: help;
 }
 
-.note-container time {
+.note-contents time {
   font-style: italic;
+  background: white;
+}
+
+.note-text {
+  background: white;
 }
