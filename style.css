@@ -160,3 +160,10 @@ body {
 .italicize {
   font-style: italic;
 }
+
+::-moz-selection {
+  background: #8dcfff;
+}
+::selection {
+  background: #8dcfff;
+}
