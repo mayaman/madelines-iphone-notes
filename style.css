@@ -148,3 +148,15 @@ body {
 .info-text a {
   color: #434343;
 }
+
+.secret-text {
+  position: absolute;
+  background: white;
+  color: #434343;
+  padding: 3px;
+  font-family: "Courier New", monospace;
+}
+
+.italicize {
+  font-style: italic;
+}
