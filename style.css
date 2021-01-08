@@ -129,19 +129,20 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: fit-content;
 }
 
 .info-text {
-  position: absolute;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%, 0%);
-
+  /* position: absolute; */
+  /* left: 50%; */
+  /* top: 10%; */
+  /* transform: translate(-50%, 0%); */
   background: white;
   width: 60vw;
+  margin: auto;
   color: #434343;
   padding: 3px;
+  margin: 10vh auto;
   font-family: "Courier New", monospace;
 }
 
