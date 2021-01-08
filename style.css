@@ -19,15 +19,35 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.title {
-  position: fixed;
+.nav-container {
+  display: flex;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav-container,
+a {
   font-size: 24px;
   text-shadow: 1px 1px 5px black;
   font-weight: normal;
   color: whitesmoke;
-  display: inline-block;
-  margin: auto;
-  width: 100%;
+  position: fixed;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.nav-container,
+a:hover {
+  text-shadow: 1px 1px 15px black;
+}
+
+#title {
+  font-style: italic;
+  left: 0;
+}
+
+#info {
+  right: 0;
 }
 
 .note-container {
@@ -98,4 +118,27 @@ body {
 
 .note-text {
   background: white;
+}
+
+/* INFO */
+.info-container {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.info-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background: white;
+  width: 80vw;
+  color: #434343;
+  padding: 3px;
+  font-family: "Courier New", monospace;
 }
