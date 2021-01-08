@@ -25,8 +25,7 @@ body {
   z-index: 9999;
 }
 
-.nav-container,
-a {
+.nav-link {
   font-size: 24px;
   text-shadow: 1px 1px 5px black;
   font-weight: normal;
@@ -34,10 +33,10 @@ a {
   position: fixed;
   padding: 5px 10px;
   text-decoration: none;
+  z-index: 999999;
 }
 
-.nav-container,
-a:hover {
+.nav-link:hover {
   text-shadow: 1px 1px 15px black;
 }
 
@@ -121,24 +120,31 @@ a:hover {
 }
 
 /* INFO */
+.one-liner {
+  font-weight: bold;
+}
+
 .info-container {
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
-  overflow: hidden;
 }
 
 .info-text {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  transform: translate(-50%, 0%);
 
   background: white;
-  width: 80vw;
+  width: 60vw;
   color: #434343;
   padding: 3px;
   font-family: "Courier New", monospace;
+}
+
+.info-text a {
+  color: #434343;
 }
