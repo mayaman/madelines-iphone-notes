@@ -133,10 +133,6 @@ body {
 }
 
 .info-text {
-  /* position: absolute; */
-  /* left: 50%; */
-  /* top: 10%; */
-  /* transform: translate(-50%, 0%); */
   background: white;
   width: 60vw;
   margin: auto;
@@ -146,8 +142,14 @@ body {
   font-family: "Courier New", monospace;
 }
 
-.info-text a {
+.info-text a,
+.secret-text a {
   color: #434343;
+}
+
+.info-text a:hover,
+.secret-text a:hover {
+  color: #8dcfff;
 }
 
 .secret-text {
